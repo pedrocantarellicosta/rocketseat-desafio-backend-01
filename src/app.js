@@ -55,7 +55,7 @@ app.put("/repositories/:id", (request, response) => {
   repositories[repositoryIndex].url = url;
   repositories[repositoryIndex].techs = techs;
 
-  return response.status(200).json(repositories[repositoryIndex]);
+  return response.json(repositories[repositoryIndex]);
 
 });
 
